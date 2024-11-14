@@ -38,6 +38,9 @@ importers:
       drizzle-orm:
         specifier: ^0.33.0
         version: 0.33.0(@libsql/client@0.9.0)(@types/react@18.3.6)(react@18.3.1)
+      http-compression:
+        specifier: ^1.1.1
+        version: 1.1.1
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.3.1
@@ -1817,6 +1820,10 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
+  http-compression@1.1.1:
+    resolution: {integrity: sha512-qsnoaCF/vcRTkgYJoihBKVwL+aYUA6RqEwBccO0iqbdccdBfaexx2UXs7Sp5fte5NfJzmBcuGIrA8RIn4anPsw==}
+    engines: {node: '>= 18'}
+
   ignore@5.3.1:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
     engines: {node: '>= 4'}
@@ -1930,7 +1937,6 @@ packages:
 
   libsql@0.4.7:
     resolution: {integrity: sha512-T9eIRCs6b0J1SHKYIvD8+KCJMcWZ900iZyxdnSCdqxN12Z1ijzT+jY5nrk72Jw4B0HGzms2NgpryArlJqvc3Lw==}
-    cpu: [x64, arm64, wasm32]
     os: [darwin, linux, win32]
 
   lilconfig@2.1.0:
@@ -4271,6 +4277,8 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
+
+  http-compression@1.1.1: {}
 
   ignore@5.3.1: {}
 
